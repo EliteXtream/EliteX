@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+    background-color: black;
+}
+
+.header {
+  background-color: limegreen;
+  color: black;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: limegreen;
+  color: black;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 8px;
+    width: 320px;
+    height: 100px;
+    font-size: 26px;
+}
+
+.menu li:hover {
+  background-color: white;
+}
+    .button{
+         border-radius: 4px; font-size: 20px; color: lawngreen; background-color: black; border-color: black; font-style: oblique
+    }
+    .button :hover {
+  background-color: white;
+}
+
+.aside {
+  background-color: limegreen;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    
+}
+
+.footer {
+  background-color: limegreen;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+ 
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="text-align: center">EliteX</h1>
+    
+    <p style="font-size: 18px; text-align: center">Choose your specific Device</p>
+    <a href="feedback.html">
+        <button class="button" >Feedback</button></a>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-8 menu">
+    <ul>
+        <a href="https://elitexstreamhome.netlify.app/">
+      <li style="text-align: center">Desktop</li>
+        </a>
+        <a href="https://elitexmobile1.netlify.app/">
+      <li style="text-align: center">Mobile</li>
+        </a>
+        <a href="app-release.apk">
+            <li style="text-align: center">Mobile Application</li></a>
+      <li style="text-align: center">TV</li>
+    </ul>
+       <a href="Server.html">
+            <li style="text-align:center">Mobile Application</li></a>
+   
+    </ul>
+  </div>
+
+    <div class="col-8 col-s-9">
+    <h1 style="color: limegreen; margin-left: 200px;">What is EliteX?</h1>
+    <p style="color: limegreen; margin-left: 200px; font-size: 20px;">EliteX is an OTT platfrom like Netflix but unlike Netflix it is free, EliteX aims to give its users a very premium experience with its powerful UI, Bots & Its powerful Servers.</p>
+        <video style="width: 330px;" controls src="NOW%20ON%20EliteX.mp4"></video>
+  </div>
+
+  <div class="col-12 col-s-12">
+    <div class="aside">
+      <h2>Before you enjoy EliteX</h2>
+      <p>Recommended platform - Desktop</p>
+         <h2>Browsers</h2>
+      <p>Recommended Browsers(Desktop) - Opera,Mozilla firefox & Google Chrome<br>Recommended Browser(Mobile) - Only Google Chrome & Opera(phone)</p>
+      <h2>Internet Speed</h2>
+      <p>Recommended Speed  Min - 40mbps or Max - 1gbps</p>
+      <h2>Dont find any Movie or Series?</h2>
+      <p>Ask our bot EliteX, It will provide movies in 30 mins, Series may Vary.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p style="">EliteX proudly created by WAE.inc<br>Trusted Partners<br>Netlify & Streamlare</p>
+</div>
+
+</body>
+</html>

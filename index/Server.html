@@ -1,0 +1,36 @@
+<html style="background-color: black">
+<link rel="stylesheet" href="style.css">
+<img class="responsive" src="NEW%20SERVERS.gif">
+    <h1 style="text-align: center; color: greenyellow; font-family: sans-serif">Things to Remember</h1>
+    <li style="text-align: left; color: greenyellow; font-family: sans-serif">This is not the final version of the player</li>
+    <li class="li">The quality of the movie might be compromised</li>
+    <li class="li">All the users need to sign in to view the server preview</li>
+    <li class="li">We request you to give your valuable feedback</li>
+    <h1 class="h1">Enter the passcode to access the preview</h1>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Security page</title>
+</head>
+<body>
+<form style="text-align: center">
+    <input style="border: limegreen; border-width:3px; border-style:solid; width: 153; height: 38; border-radius: 18px; background-color: whitesmoke; text-align: center" type="password" id="pswd">
+    <input style="width: 70; height: 38; border: limegreen; border-width: 5px; ;color: limegreen; background-color: grey" type="button" value="Submit" onclick="checkPswd();" />
+</form>
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "5012";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="Welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+    
+</body>
+</html>
+</html>
